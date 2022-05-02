@@ -1,0 +1,40 @@
+.container {
+
+  width: 100%;
+
+  background-color: var(--blue);
+
+  .innerContainer {
+    display: flex;
+    height: 13.25rem;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 4rem 1rem;
+    gap: 20px;
+
+    .TictoLogo {
+      width: 10rem;
+      height: auto;
+    }
+
+    .newTransactionButton {
+      background-color: var(--blue-light);
+      color: var(--shape);
+      padding: 0.93rem 3.25rem;
+      font-family: 'roboto', sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      white-space: nowrap;
+      border-radius: 8px;
+      border: 0;
+
+      &:active {
+        filter: brightness(1.1);
+      }
+    }
+
+  }
+}
