@@ -1,0 +1,50 @@
+.container {
+  flex: 1;
+  height: 10.9rem;
+  background-color: var(--shape);
+  border-radius: 8px; 
+  padding: 1.8rem 2.3rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8rem;
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--card-title);
+    }
+  
+    .logo {
+      
+    }
+  
+  }
+
+  .amount {
+    color: var(--card-amount);
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+
+}
+
+.container__green {
+  @extend .container;
+  background-color: var(--green);
+
+
+  .header {
+
+    .title {
+      color: var(--shape);
+    }
+ 
+  }
+
+  .amount {
+    color: var(--shape);
+  }
+}

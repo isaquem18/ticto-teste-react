@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+
+  .innerContainer {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    max-width: calc(1200px - 2rem);
+    margin: 0 auto;
+    margin-top: -2.2rem;
+  }
+}

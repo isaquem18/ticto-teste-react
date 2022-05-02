@@ -1,0 +1,19 @@
+.container {
+
+  width: 100%;
+
+  .innerContainer {
+    display: flex;
+    height: 13.25rem;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 4rem 1rem;
+    gap: 20px;
+
+ 
+
+  }
+}
