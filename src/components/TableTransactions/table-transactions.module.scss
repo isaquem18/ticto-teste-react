@@ -1,19 +1,41 @@
 .container {
-
   width: 100%;
-
-  .innerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem 1rem;
+  
+  .thead {
     display: flex;
-    height: 13.25rem;
-    flex: 1;
-    align-items: flex-end;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem 4rem 1rem;
-    gap: 20px;
+    width: 100%;
+    padding: 3rem 0 1.5rem 0;
+    font-size: 1.125rem;
+    color: var(--button-text);
 
- 
+    .description {
+      width: 35%;
+    }
+
+    .amount {
+      width: 20%;
+    }
+
+    .category {
+      width: 20%;
+    }
+
+    .date {
+      width: 25%;
+    } 
 
   }
+
+  .notFoundItem {
+    opacity: 0.4;
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+
 }

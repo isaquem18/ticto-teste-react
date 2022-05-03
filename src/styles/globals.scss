@@ -2,19 +2,28 @@
 :root {
   --background-color: #F0F2F5;
 
-  --red: #DB3766;
+  --pink-500: #DB3766;
+  --pink-550: ##E23161;
+
   --blue: #30107D;
-  --green: #06D6A2;
-  --blue-light: #401A9B;
+  --bg-button: #401A9B;
+
+  --green-total: #06D6A2;
+  --green-amount:#06D7A5;
+
+  --table-text-header: #B9B9B9;
 
   --card-title:#484F55;
   --card-amount: #4E5555;
 
-  --text-title: #363F5F;
-  --text-body: #969CB3;
-  --button-text: #b9b9b9;
+  --input-bg: #F7F7F7;
+
+  --gray-table-row: #4C5A5A;
 
   --shape: #FFFFFF;
+  --dark: #000000;
+
+  --bg-modal: #FDFDFD;
 }
 
 * {

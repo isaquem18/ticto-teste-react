@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  margin-top: -2.2rem;
 
   .innerContainer {
     display: flex;
@@ -7,6 +8,14 @@
     flex: 1;
     max-width: calc(1200px - 2rem);
     margin: 0 auto;
-    margin-top: -2.2rem;
   }
 }
+
+@media (max-width: 720px) {
+  .container {
+    overflow-x: scroll;
+    padding: 0 2rem 2rem 2rem;
+    display: flex;
+  }
+}
+

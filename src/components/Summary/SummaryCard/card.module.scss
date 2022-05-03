@@ -4,6 +4,7 @@
   background-color: var(--shape);
   border-radius: 8px; 
   padding: 1.8rem 2.3rem;
+  min-width: 250px;
 
   .header {
     display: flex;
@@ -16,11 +17,7 @@
       font-weight: 400;
       color: var(--card-title);
     }
-  
-    .logo {
-      
-    }
-  
+    
   }
 
   .amount {
@@ -33,7 +30,7 @@
 
 .container__green {
   @extend .container;
-  background-color: var(--green);
+  background-color: var(--green-total);
 
 
   .header {

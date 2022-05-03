@@ -3,11 +3,31 @@ import styles from './summary.module.scss';
 //  icons
 import IncomeIcon from '../../assets/income.svg';
 import OutcomeIcon from '../../assets/outcome.svg';
-import TotalIcon from '../../assets/total.svg';
+import { TransactionProps } from '../../context/TransactionContext/types';
  
-import { SummaryCard } from '../SummaryCard';
+import { SummaryCard } from './SummaryCard';
+import { useTransaction } from '../../context/TransactionContext';
 
 export function Summary () {
+  const { transactionList } = useTransaction();
+
+
+  let incomesAmount: number = 0;
+  let outcomesAmount: number = 0;
+  let totalAmount: number = 0;
+
+  transactionList.forEach(item => {
+    switch (item.type) {
+      case 'income': 
+        incomesAmount += item.amount;
+        break; 
+      case 'outcome': 
+        outcomesAmount += item.amount;
+        break; 
+    }
+  })
+
+  totalAmount = incomesAmount + -outcomesAmount;
 
   return (
     <header className={styles.container}>
@@ -15,16 +35,16 @@ export function Summary () {
         <SummaryCard 
           title='Entradas'
           icon={IncomeIcon}
-          amount={17400}
+          amount={incomesAmount}
         />
         <SummaryCard 
           title='Saídas'
           icon={OutcomeIcon}
-          amount={17400}
+          amount={outcomesAmount}
         />
         <SummaryCard 
           title='Total'
-          amount={17400}
+          amount={totalAmount}
           color={true}
         />
       </div>
