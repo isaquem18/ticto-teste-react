@@ -7,7 +7,7 @@
   .thead {
     display: flex;
     width: 100%;
-    padding: 3rem 0 1.5rem 0;
+    padding: 1.5rem 0 1.5rem 0;
     font-size: 1.125rem;
     color: var(--button-text);
 
@@ -37,5 +37,10 @@
 }
 
 @media (max-width: 720px) {
-
+  .container {
+    .thead {
+      visibility: hidden;
+      margin-top: -50px;
+    }
+  }
 }

@@ -20,7 +20,6 @@
 
   .amount {
     width: 20%;
-    font-weight: 600;
     font-size: 1.125rem;
     overflow: hidden;
   }
@@ -29,12 +28,14 @@
     color: var(--green-amount);
     width: 20%;
     overflow: hidden;
+    font-weight: bold;
   }
 
   .outcome {
     color: var(--pink-500);
     width: 20%;
     overflow: hidden;
+    font-weight: bold;
   }
 
   .category {
@@ -72,13 +73,13 @@
   
     .description {
       width: 48%;
-      height: 40px;
+      height: 30px;
     }
   
     .amount {
       width: 48%;
       font-weight: 600;
-      height: 40px;
+      height: 30px;
     }
   
     .category {

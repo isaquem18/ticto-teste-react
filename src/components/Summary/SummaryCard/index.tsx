@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './card.module.scss';
-import Image from 'Next/image';
+import Image from 'next/image';
 
 type Props = {
   title: string;

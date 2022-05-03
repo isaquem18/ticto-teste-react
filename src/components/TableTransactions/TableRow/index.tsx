@@ -26,13 +26,18 @@ export function TableRow ({
 
   const hour = new Date().getHours();
   const minute = new Date().getMinutes();
+  
+  const formattedAmount = Number(amount).toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL'
+  })
 
   return (
     <header className={styles.container}>
       <div className={styles.description}>{description}</div>
       <div className={`${styles.amount, 
         type === 'income' ? styles.income : styles.outcome
-      }`}>{amount}</div>
+      }`}>{formattedAmount}</div>
       <div className={styles.category}>{category}</div>
       <div className={styles.date}>
         {formattedDate} às {hour}h{minute}

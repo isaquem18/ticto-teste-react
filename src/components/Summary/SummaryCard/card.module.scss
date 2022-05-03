@@ -5,6 +5,7 @@
   border-radius: 8px; 
   padding: 1.8rem 2.3rem;
   min-width: 250px;
+  overflow: hidden;
 
   .header {
     display: flex;
@@ -45,3 +46,14 @@
     color: var(--shape);
   }
 }
+
+@media (max-width: 720px) {
+  .container {
+
+    .amount {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+  }
+};
